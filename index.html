@@ -246,7 +246,7 @@
       transition: 0.4s;
     }
 
-    .nav-toggle {
+    /* .nav-toggle {
       height: 32px;
       width: 36px;
       cursor: pointer;
@@ -258,6 +258,20 @@
       background-color: var(--skin-color);
       color: var(--title-color);
       display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    } */
+    .nav-toggle {
+      height: 32px;
+      width: 36px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border-radius: 0.25rem;
+      background-color: var(--skin-color);
+      color: var(--title-color);
+      display: none;
+      /* Defaultda ko‘rinmaydi */
       justify-content: center;
       align-items: center;
       z-index: 999;
@@ -1424,7 +1438,13 @@
     @media screen and (max-width: 576px) {
       .nav-toggle {
         right: initial;
-        left: 1.5rem;
+        /* left: 1.5rem; */
+        display: flex;
+        /* right: 1.5rem; */
+        margin-top: 30px;
+        margin-left: 20px;
+
+        /* top: 2rem; */
       }
 
       .home {
